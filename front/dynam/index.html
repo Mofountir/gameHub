@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Website</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Navbar</h1>
+      <ul class="ulnavbar">
+        <li class="li active" data-section="home">Home</li>
+        <li class="li" data-section="jeux1">Jeux 1</li>
+        <li class="li" data-section="jeux2">Jeux 2</li>
+        <li class="li" data-section="jeux3">Jeux 3</li>
+        <li class="li" data-section="AboutUs">About Us</li>
+        <li class="li" data-section="connexion">Se connecter</li>
+      </ul>
+    </div>
+
+    <div class="menu-container" id="gameMenu">
+      <div class="menu">
+        <div class="game-card" data-section="jeux1" data-index="0">Jeux 1</div>
+        <div class="game-card" data-section="jeux2" data-index="1">Jeux 2</div>
+        <div class="game-card" data-section="jeux3" data-index="2">Jeux 3</div>
+      </div>
+    </div>
+
+    <!-- Conteneur pour le contenu dynamique -->
+    <div id="content" class="content">
+      <!-- Le contenu des sections sera chargé ici -->
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
